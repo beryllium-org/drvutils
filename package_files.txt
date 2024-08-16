@@ -1,0 +1,4 @@
+mpy submodules/Adafruit_CircuitPython_DRV2605/adafruit_drv2605.py adafruit_drv2605.mpy
+file adafruit_drv2605.mpy /lib/adafruit_drv2605.mpy
+file drv2605vib.lja /bin/drv2605vib.lja
+file drv2605vib.py /bin/drv2605vib.py
