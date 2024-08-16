@@ -1,4 +1,4 @@
-# jpkg-template-package
-A template package for jpkg
+# Beryllium OS DRVUtils
+Utillities for using DRV2605 vibration motors under Beryllium OS.
 <br />
 Build with <code>make package</code>
