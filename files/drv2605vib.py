@@ -46,8 +46,10 @@ if "i" in vr("opts")["o"]:
         import adafruit_drv2605
 
         vr("vibn", adafruit_drv2605.DRV2605(vr("i2c")))
-        be.based.run("mknod vib")
-        vr("node", be.api.getvar("return"))
+        be.api.setvar("argj", "mknod vib")
+        be.api.subscript("/bin/mknod.py")
+        vr("node", be.api.getvar("out"))
+        be.api.setvar("out", None)
         be.api.subscript("/bin/stringproccessing/devid.py")
         be.devices["vib"][vr("dev_id")] = vibrator(vr("vibn"), adafruit_drv2605)
         del vibrator, adafruit_drv2605
